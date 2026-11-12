@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Calico Coffee — clarity, purity and complexity across the full spectrum of coffee.">
+  <title>Calico Coffee — Light Grey Study</title>
+  <style>
+    :root{--cloth:#efeee9;--plaster:#f6f5f1;--ink:#22221f;--muted:#77756f;--line:#cbc8c1;--accent:#984b38;--brick:#984b38;--wood:#342925;--spectrum:linear-gradient(90deg,#d0c4a2 0%,#e5c76e 18%,#dc8a5d 38%,#bb5260 58%,#79547d 78%,#385e62 100%)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cloth);color:var(--ink);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.26;z-index:50;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.16'/%3E%3C/svg%3E")}
+    a{color:inherit;text-decoration:none}.announcement{height:34px;background:#20201c;color:#f3efe5;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.17em;text-transform:uppercase}
+    header{height:86px;padding:0 4vw;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto 1fr;align-items:center;position:relative;z-index:4}.nav,.utility{display:flex;align-items:center;gap:25px;font-size:12px;letter-spacing:.08em;text-transform:uppercase}.utility{justify-content:flex-end}.logo{text-align:center;font-size:18px;letter-spacing:.28em;font-weight:700}.logo small{display:block;font-size:8px;letter-spacing:.52em;margin-top:4px;font-weight:400}.menu{display:none}
+    .hero{min-height:480px;display:grid;grid-template-columns:1.16fr .84fr;border-bottom:1px solid var(--line)}.hero-copy{padding:5vh 4vw 4vh;display:flex;flex-direction:column;justify-content:space-between}.eyebrow{font-size:9px;letter-spacing:.22em;text-transform:uppercase;display:flex;gap:12px;align-items:center}.eyebrow:before{content:"";width:32px;height:1px;background:currentColor}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(38px,4.7vw,72px);font-weight:400;line-height:.94;letter-spacing:-.05em;margin:2.5vh 0 2vh;max-width:700px}.hero h1 em{font-style:italic;color:var(--accent)}.lead{font-family:Georgia,'Times New Roman',serif;font-size:clamp(15px,1.15vw,19px);line-height:1.45;max-width:560px;margin:0;color:#3c3b35}.hero-actions{display:flex;align-items:center;gap:20px;margin-top:2.5vh}.button{background:var(--ink);color:var(--cloth);padding:13px 20px;font-size:10px;letter-spacing:.17em;text-transform:uppercase;transition:.25s}.button:hover{background:var(--accent)}.text-link{font-size:10px;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid;padding-bottom:5px}.hero-art{position:relative;overflow:hidden;background:#d8d0bf;min-height:420px}.hero-art img{width:100%;height:100%;object-fit:cover;filter:saturate(.65) contrast(.93)}.hero-art:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(242,239,230,.08),rgba(27,27,24,.22))}.fabric-label{position:absolute;z-index:2;left:8%;bottom:7%;background:rgba(242,239,230,.92);padding:14px 16px;width:190px;border:1px solid rgba(27,27,24,.18);font-size:9px;letter-spacing:.14em;text-transform:uppercase;line-height:1.55}.stitch{position:absolute;z-index:3;inset:18px;border:1px dashed rgba(242,239,230,.72);pointer-events:none}
+    .manifesto{padding:5.5vw 4vw 4vw;display:grid;grid-template-columns:.8fr 2.2fr;gap:7vw;border-bottom:1px solid var(--line)}.section-index{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}.manifesto h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(28px,3.3vw,50px);line-height:1.03;letter-spacing:-.035em;margin:0}.manifesto p{font-size:13px;line-height:1.65;max-width:570px;margin:20px 0 0 25%;color:#4e4c45}
+    .spectrum-section{padding:8vw 4vw;border-bottom:1px solid var(--line)}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:50px}.section-head h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(40px,5.4vw,78px);letter-spacing:-.045em;margin:10px 0 0}.section-head p{max-width:360px;font-size:13px;line-height:1.65;color:var(--muted)}.spectrum{height:17px;background:var(--spectrum);margin:30px 0 18px;position:relative}.spectrum:after{content:"";position:absolute;inset:-7px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.spectrum-labels{display:flex;justify-content:space-between;font-size:9px;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
+    .coffee-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:65px}.card{background:var(--cloth);padding:16px;min-width:0;display:flex;flex-direction:column}.card-image{aspect-ratio:4/4.6;overflow:hidden;background:#ded8ca;position:relative}.card-image img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease;filter:saturate(.8)}.card:hover img{transform:scale(1.035)}.number{position:absolute;top:12px;left:12px;background:var(--cloth);width:34px;height:34px;display:grid;place-items:center;font-family:Georgia,serif;font-size:12px}.card-meta{display:flex;justify-content:space-between;gap:20px;padding:18px 2px 5px}.card h3{font-family:Georgia,'Times New Roman',serif;font-size:21px;font-weight:400;line-height:1.18;margin:0}.origin{font-size:9px;text-transform:uppercase;letter-spacing:.15em;color:var(--muted);margin-top:7px}.price{font-size:12px;white-space:nowrap}.notes{margin:25px 0 14px;padding-top:13px;border-top:1px solid var(--line);font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);display:flex;justify-content:space-between}.cart-button{width:100%;margin-top:auto;border:1px solid var(--brick);background:transparent;color:var(--wood);padding:14px 16px;font:inherit;font-size:10px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:10px;transition:background .2s,color .2s}.cart-button:before{content:"+";display:grid;place-items:center;width:18px;height:18px;border:1px solid currentColor;border-radius:50%;font-size:14px;line-height:1}.cart-button:hover,.cart-button:focus-visible{background:var(--brick);color:var(--plaster);outline:none}.cart-button.added{background:var(--wood);border-color:var(--wood);color:var(--plaster)}.cart-button.added:before{content:"✓";font-size:10px}
+    .process{display:grid;grid-template-columns:1fr 1fr;min-height:600px;border-bottom:1px solid var(--line)}.process-image{background:url('https://calicocoffee.co.uk/cdn/shop/files/56cf5bf4-820f-437c-a5c4-bf6012e05a4b.jpg?v=1787262942&width=2560') center/cover;filter:saturate(.55)}.process-copy{padding:8vw 7vw;display:flex;flex-direction:column;justify-content:center}.process h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(42px,5vw,75px);font-weight:400;line-height:1.03;letter-spacing:-.04em;margin:22px 0}.process p{font-size:14px;line-height:1.8;color:#4e4c45;max-width:500px}.values{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:45px}.value b{font-family:Georgia,serif;font-size:28px;font-weight:400}.value span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.15em;margin-top:8px;color:var(--muted)}
+    .closing{padding:11vw 4vw;text-align:center}.closing .eyebrow{justify-content:center}.closing h2{font-family:Georgia,'Times New Roman',serif;font-weight:400;font-size:clamp(50px,8vw,118px);letter-spacing:-.055em;line-height:.92;margin:45px auto 55px;max-width:1100px}.closing h2 i{font-weight:400;color:var(--accent)}
+    footer{border-top:1px solid var(--line);padding:35px 4vw 50px;display:grid;grid-template-columns:1fr auto 1fr;align-items:end;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.footer-links{display:flex;gap:22px}.footer-logo{text-align:center;font-size:15px;letter-spacing:.28em;font-weight:700}.copyright{text-align:right;color:var(--muted)}
+    /* Architectural direction: grey-white plaster as fabric, brick as the structure. */
+    body{background-color:var(--plaster);background-image:linear-gradient(90deg,rgba(70,68,62,.018) 1px,transparent 1px),linear-gradient(rgba(70,68,62,.012) 1px,transparent 1px);background-size:22px 22px}
+    .announcement{background:var(--wood)}header{background:rgba(229,228,222,.94);border-bottom:3px solid rgba(152,75,56,.82)}
+    .logo{color:var(--brick)}.hero{border-bottom:5px solid rgba(152,75,56,.78);grid-template-columns:minmax(0,1.35fr) minmax(360px,1fr)}.hero-copy{background:var(--plaster);position:relative;border-right:4px solid var(--brick)}.hero-copy:after{display:none}.hero-copy>div{position:relative;z-index:1}.hero-copy>.section-index{margin-top:24px}.hero h1{background:transparent;box-shadow:none;padding:0;max-width:620px}.hero h1 em{color:var(--brick)}
+    .hero-art{background:#e2e0da;border-left:1px solid #c8c4bb}.hero-art:before{content:"";position:absolute;z-index:2;inset:0;background:linear-gradient(90deg,transparent 49%,rgba(152,75,56,.82) 49%,rgba(152,75,56,.82) calc(49% + 4px),transparent calc(49% + 4px)),linear-gradient(transparent 66%,rgba(152,75,56,.82) 66%,rgba(152,75,56,.82) calc(66% + 4px),transparent calc(66% + 4px));pointer-events:none}.hero-art img{filter:grayscale(.32) saturate(.55) contrast(.92) brightness(1.08);mix-blend-mode:normal;opacity:.86}.hero-art:after{background:linear-gradient(180deg,rgba(229,228,222,.16),rgba(52,41,37,.1))}.stitch{border:1px solid rgba(229,228,222,.9);inset:26px}.fabric-label{background:rgba(229,228,222,.95);border:0;border-left:5px solid var(--brick);color:var(--wood)}
+    .manifesto{background:var(--plaster);position:relative;border-left:4px solid var(--brick)}.manifesto:before{display:none}.manifesto h2{color:var(--wood)}.manifesto h2::first-line{color:var(--brick)}
+    .spectrum-section{background:#ebeae5;border-top:1px solid var(--line)}.spectrum{height:11px}.coffee-grid{background:var(--brick);border:6px solid var(--brick);gap:5px}.card{background:var(--plaster)}.number{background:var(--brick);color:var(--plaster)}.card-image{border-bottom:5px solid var(--brick)}
+    .process{border-top:12px solid var(--brick);border-bottom:12px solid var(--brick)}.process-image{position:relative;filter:grayscale(.25) saturate(.55);border-right:18px solid var(--brick)}.process-copy{background:var(--plaster)}.process h2{color:var(--brick)}.closing{background:var(--wood);color:var(--plaster)}.closing .eyebrow,.closing .section-index{color:#c6c2b8}.closing h2 i{color:#c46b50}.closing .button{background:var(--brick)}footer{background:var(--brick);color:var(--plaster);border:0}.copyright{color:#d3b7ad}
+    @media(max-width:850px){header{grid-template-columns:1fr auto}.nav,.utility a{display:none}.utility{gap:15px}.menu{display:block}.logo{text-align:left}.hero{grid-template-columns:1fr;min-height:0}.hero-copy{min-height:0;padding:42px 4vw 34px;border-right:0;border-bottom:4px solid var(--brick)}.hero-copy:after{display:none}.hero h1{max-width:560px}.hero-art{min-height:260px;height:42vw;max-height:360px}.manifesto{grid-template-columns:1fr;padding:38px 4vw 34px}.manifesto:before{display:none}.manifesto p{margin-left:0;max-width:620px}.section-head{display:block}.coffee-grid{grid-template-columns:1fr}.process{grid-template-columns:1fr}.process-image{min-height:500px;border-right:0;border-bottom:12px solid var(--brick)}.values{grid-template-columns:1fr 1fr 1fr}footer{grid-template-columns:1fr;gap:25px}.footer-logo{text-align:left;order:-1}.copyright{text-align:left}}
+    @media(max-width:500px){.hero h1{font-size:32px;line-height:.98}.lead{font-size:14px;line-height:1.5}.hero-actions{align-items:flex-start;flex-direction:row;flex-wrap:wrap;gap:14px}.hero-copy{padding:34px 24px 28px}.hero-art{height:230px;min-height:230px}.fabric-label{width:170px;padding:11px 13px}.manifesto{padding:32px 24px 30px}.manifesto h2{font-size:27px;line-height:1.08}.manifesto p{font-size:13px;margin-top:16px}.process-image{min-height:380px}.values{grid-template-columns:1fr}.spectrum-labels span:nth-child(even){display:none}}
+  </style>
+</head>
+<body>
+  <div class="announcement">Roasted in London · Shipped worldwide</div>
+  <header>
+    <nav class="nav"><a href="#coffee">Coffee</a><a href="#approach">Our approach</a><a href="#story">Journal</a><a href="#trade">Wholesale</a></nav>
+    <a class="logo" href="#">CALICO<small>COFFEE</small></a>
+    <div class="utility"><a href="#">Search</a><a href="#">Account</a><a href="#" id="cartCount">Bag (0)</a><span class="menu">Menu</span></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div>
+          <div class="eyebrow">Calico Coffee · London</div>
+          <h1>Clarity is our canvas.<br><em>Flavour is the structure.</em></h1>
+          <p class="lead">Clarity, purity, and depth in every cup. We roast to reveal what is already there—nothing added, nothing hidden.</p>
+          <div class="hero-actions"><a class="button" href="#coffee">Explore the coffees</a><a class="text-link" href="#approach">Discover our approach</a></div>
+        </div>
+        <div class="section-index">01 — The Calico idea</div>
+      </div>
+      <div class="hero-art">
+        <div class="stitch"></div>
+        <img src="https://calicocoffee.co.uk/cdn/shop/files/calico-christmas-2026-03-calendar-coffee-ritual.jpg?v=1792056876&width=1200" alt="Calico canvas bag and coffee tubes in natural light">
+        <div class="fabric-label">Grey-white as canvas.<br>Brick red as structure.<br>Coffee as possibility.</div>
+      </div>
+    </section>
+    <section class="manifesto" id="story">
+      <div class="section-index">02 — White, reimagined</div>
+      <div><h2>All colour.<br>No colour.<br>Infinite possibility.</h2><p>Calico begins with white: not emptiness, but potential. Like untreated cotton, our coffee is direct and substantial. Like a blank canvas, it carries a world of colour—fruit, flower, sweetness, spice—waiting to be revealed.</p></div>
+    </section>
+    <section class="spectrum-section" id="coffee">
+      <div class="section-head"><div><div class="section-index">03 — Taste by character</div><h2>Find your spectrum.</h2></div><p>Choose by the expression you enjoy, from quiet clarity to vivid complexity. Each roast is calibrated to preserve the coffee’s own voice.</p></div>
+      <div class="spectrum" aria-label="Flavour spectrum from clean and bright to deep and complex"></div>
+      <div class="spectrum-labels"><span>Tea-like</span><span>Citrus</span><span>Stone fruit</span><span>Floral</span><span>Berry</span><span>Cacao</span></div>
+      <div class="coffee-grid">
+        <article class="card"><div class="card-image"><span class="number">01</span><img src="https://calicocoffee.co.uk/cdn/shop/files/IMG-2584.jpg?v=1789605280&width=832" alt="Kenya Kamavindi Geisha coffee"></div><div class="card-meta"><div><h3>Kamavindi Geisha</h3><div class="origin">Kenya · Washed</div></div><div class="price">£29</div></div><div class="notes"><span>Bergamot</span><span>White peach</span><span>Jasmine</span></div><button class="cart-button" type="button" data-product="Kamavindi Geisha">Add to cart</button></article>
+        <article class="card"><div class="card-image"><span class="number">02</span><img src="https://calicocoffee.co.uk/cdn/shop/files/calico-finca-feryen-geisha-washed-2026-60g.jpg?v=1793726999&width=1200" alt="Panama Feryen Estate Geisha coffee"></div><div class="card-meta"><div><h3>Feryen Estate Geisha</h3><div class="origin">Panama · Washed</div></div><div class="price">£18</div></div><div class="notes"><span>Orange blossom</span><span>Apricot</span><span>Honey</span></div><button class="cart-button" type="button" data-product="Feryen Estate Geisha">Add to cart</button></article>
+        <article class="card"><div class="card-image"><span class="number">03</span><img src="https://calicocoffee.co.uk/cdn/shop/files/B80F87F0-4FFD-4EB4-95F1-BB9B358FBA28.jpg?v=1789605153&width=832" alt="Panama Sophia natural coffee"></div><div class="card-meta"><div><h3>Sophia FS15525</h3><div class="origin">Panama · Natural</div></div><div class="price">£31</div></div><div class="notes"><span>Red grape</span><span>Rose</span><span>Cacao</span></div><button class="cart-button" type="button" data-product="Sophia FS15525">Add to cart</button></article>
+      </div>
+    </section>
+    <section class="process" id="approach">
+      <div class="process-image" role="img" aria-label="Coffee roasting at Calico"></div>
+      <div class="process-copy"><div class="section-index">04 — Our approach</div><h2>Roasted for revelation, not transformation.</h2><p>We work lightly and precisely, allowing origin, variety and process to remain legible in the cup. The result is coffee with structure, sweetness and a distinct sense of place.</p><div class="values"><div class="value"><b>01</b><span>Source transparently</span></div><div class="value"><b>02</b><span>Roast precisely</span></div><div class="value"><b>03</b><span>Brew clearly</span></div></div></div>
+    </section>
+    <section class="closing" id="trade"><div class="eyebrow">Calico Coffee</div><h2>Simple in form.<br><i>Infinite</i> in flavour.</h2><a class="button" href="#coffee">Enter the collection</a></section>
+  </main>
+  <footer><div class="footer-links"><a href="#">Instagram</a><a href="#">Contact</a><a href="#">FAQ</a></div><div class="footer-logo">CALICO</div><div class="copyright">© 2026 Calico Coffee · London</div></footer>
+  <script>
+    let cartItems = 0;
+    const cartCount = document.getElementById('cartCount');
+    document.querySelectorAll('.cart-button').forEach((button) => {
+      button.addEventListener('click', () => {
+        if (button.classList.contains('added')) return;
+        cartItems += 1;
+        button.classList.add('added');
+        button.textContent = 'Added to cart';
+        button.setAttribute('aria-label', button.dataset.product + ' added to cart');
+        cartCount.textContent = `Bag (${cartItems})`;
+      });
+    });
+  </script>
+</body>
+</html>
