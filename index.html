@@ -45,6 +45,29 @@ font-family:Arial,Helvetica,sans-serif;font-weight:400;font-style:normal;letter-
 }
 @media(max-width:500px){.hero h1{font-size:28px}.manifesto h2{font-size:25px}.card h3{font-size:17px}}
 
+
+/* Compact laptop composition with independently spaced product cards. */
+.hero{min-height:0;align-items:stretch}
+.hero-copy{padding:30px 4vw 26px;justify-content:center}
+.hero h1{font-size:clamp(26px,2.8vw,40px);margin:18px 0}
+.hero-art{min-height:0;height:100%;overflow:hidden}
+.hero-art img{position:absolute;inset:0;display:block;object-fit:cover;object-position:center 45%}
+.hero-copy>.section-index{margin-top:20px}
+.fabric-label{font-size:8px;padding:10px 12px;width:165px}
+.coffee-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px;background:transparent;border:0;margin-top:40px}
+.card{padding:10px;border:1px solid rgba(152,75,56,.82);background:var(--plaster)}
+.card-image{aspect-ratio:1/1;border-bottom:2px solid rgba(152,75,56,.82)}
+.card-meta{padding:14px 0 4px;gap:10px;min-height:78px}
+.card h3{font-size:14px;letter-spacing:.04em}
+.price{font-size:12px}.origin{font-size:8px}
+.notes{font-size:8px;letter-spacing:.06em;gap:8px;margin:14px 0 12px;flex-wrap:wrap}
+.cart-button{padding:11px 10px;min-height:42px;font-size:9px}
+.number{width:27px;height:27px;top:8px;left:8px}
+@media(min-width:851px){.hero-copy{min-height:340px}.hero-art{max-height:440px}}
+@media(min-width:601px) and (max-width:1000px){.coffee-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}
+@media(max-width:850px){.hero-art{position:relative;height:240px;min-height:240px;max-height:240px}.hero-copy{padding:32px 4vw}}
+@media(max-width:600px){.coffee-grid{grid-template-columns:1fr;gap:20px}.card-image{aspect-ratio:1.15/1}.card h3{font-size:17px}.card-meta{min-height:0}.notes{font-size:9px}}
+
 </style>
 </head>
 <body>
@@ -83,6 +106,7 @@ font-family:Arial,Helvetica,sans-serif;font-weight:400;font-style:normal;letter-
         <article class="card"><div class="card-image"><span class="number">01</span><img src="https://calicocoffee.co.uk/cdn/shop/files/IMG-2584.jpg?v=1789605280&width=832" alt="Kenya Kamavindi Geisha coffee"></div><div class="card-meta"><div><h3>Kamavindi Geisha</h3><div class="origin">Kenya · Washed</div></div><div class="price">£29</div></div><div class="notes"><span>Bergamot</span><span>White peach</span><span>Jasmine</span></div><button class="cart-button" type="button" data-product="Kamavindi Geisha">Add to cart</button></article>
         <article class="card"><div class="card-image"><span class="number">02</span><img src="https://calicocoffee.co.uk/cdn/shop/files/calico-finca-feryen-geisha-washed-2026-60g.jpg?v=1793726999&width=1200" alt="Panama Feryen Estate Geisha coffee"></div><div class="card-meta"><div><h3>Feryen Estate Geisha</h3><div class="origin">Panama · Washed</div></div><div class="price">£18</div></div><div class="notes"><span>Orange blossom</span><span>Apricot</span><span>Honey</span></div><button class="cart-button" type="button" data-product="Feryen Estate Geisha">Add to cart</button></article>
         <article class="card"><div class="card-image"><span class="number">03</span><img src="https://calicocoffee.co.uk/cdn/shop/files/B80F87F0-4FFD-4EB4-95F1-BB9B358FBA28.jpg?v=1789605153&width=832" alt="Panama Sophia natural coffee"></div><div class="card-meta"><div><h3>Sophia FS15525</h3><div class="origin">Panama · Natural</div></div><div class="price">£31</div></div><div class="notes"><span>Red grape</span><span>Rose</span><span>Cacao</span></div><button class="cart-button" type="button" data-product="Sophia FS15525">Add to cart</button></article>
+<article class="card"><div class="card-image"><span class="number">04</span><img src="https://calicocoffee.co.uk/cdn/shop/files/IMG-2584.jpg?v=1789605280&width=832" alt="Kenya Kamavindi Geisha coffee"></div><div class="card-meta"><div><h3>Kamavindi Geisha</h3><div class="origin">Kenya · Washed</div></div><div class="price">£29</div></div><div class="notes"><span>Bergamot</span><span>White peach</span><span>Jasmine</span></div><button class="cart-button" type="button" data-product="Kamavindi Geisha">Add to cart</button></article>
       </div>
     </section>
     <section class="process" id="approach">
