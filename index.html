@@ -111,12 +111,32 @@ font-family:Arial,Helvetica,sans-serif;font-weight:400;font-style:normal;letter-
 @media(min-width:601px) and (max-width:1000px){.coffee-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.video-stage{min-height:340px}}
 @media(max-width:600px){.coffee-grid{grid-template-columns:1fr}.video-slot{grid-column:auto;padding:14px}.video-stage{min-height:260px}.card-meta{min-height:0}.video-caption{min-height:64px}}
 
+
+/* Coordinated layout refinements from page review. */
+.nav{gap:18px;font-size:11px}
+.hero-copy{justify-content:flex-start}
+.hero-copy>.section-index{margin-top:26px}
+.closing h2{font-size:clamp(24px,2.4vw,34px);line-height:1.22;margin:20px auto 24px}
+.closing{padding:42px 4vw 46px}
+.manifesto{border-bottom:0;border-left:0;box-shadow:inset 4px 0 0 #aa6b5a}
+.hero{border-bottom-color:#aa6b5a}
+.spectrum-section{border-top:0;padding-top:38px;padding-bottom:64px}
+.section-head{margin-bottom:28px}
+.coffee-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px 24px;margin-top:30px}
+.card-image{aspect-ratio:1.45/1}
+.card-meta{min-height:64px;padding-top:12px}
+.notes{margin-top:10px;margin-bottom:10px;min-height:24px}
+.video-stage{min-height:220px}
+.video-caption{min-height:64px}
+@media(min-width:601px) and (max-width:1000px){.coffee-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.video-stage{min-height:260px}}
+@media(max-width:600px){.coffee-grid{grid-template-columns:1fr}.card-image{aspect-ratio:1.35/1}.spectrum-section{padding-top:30px}.closing h2{font-size:24px}.video-slot{grid-column:auto}}
+
 </style>
 </head>
 <body>
   <div class="announcement">Roasted in London · Shipped worldwide</div>
   <header>
-    <nav class="nav"><a href="#coffee">Coffee</a><a href="#approach">Our approach</a><a href="#story">Journal</a><a href="#trade">Wholesale</a></nav>
+    <nav class="nav"><a href="#">Home</a><a href="#coffee">Coffee</a><a href="#approach">Roastery</a><a href="#story">About us</a><a href="#trade">Wholesale</a></nav>
     <a class="logo" href="#">CALICO<small>COFFEE</small></a>
     <div class="utility"><a href="#">Search</a><a href="#">Account</a><a href="#" id="cartCount">Bag (0)</a><span class="menu">Menu</span></div>
   </header>
@@ -149,8 +169,8 @@ font-family:Arial,Helvetica,sans-serif;font-weight:400;font-style:normal;letter-
 <article class="card"><div class="card-image"><span class="number">01</span><img src="https://calicocoffee.co.uk/cdn/shop/files/IMG-2584.jpg?v=1789605280&width=832" alt="Kenya Kamavindi Geisha coffee"></div><div class="card-meta"><div><h3>Kamavindi Geisha</h3><div class="origin">Kenya · Washed</div></div><div class="price">£29</div></div><div class="notes"><span>Bergamot</span><span>White peach</span><span>Jasmine</span></div><button class="cart-button" type="button" data-product="Kamavindi Geisha">Add to cart</button></article>
 <article class="card"><div class="card-image"><span class="number">02</span><img src="https://calicocoffee.co.uk/cdn/shop/files/calico-finca-feryen-geisha-washed-2026-60g.jpg?v=1793726999&width=1200" alt="Panama Feryen Estate Geisha coffee"></div><div class="card-meta"><div><h3>Feryen Estate Geisha</h3><div class="origin">Panama · Washed</div></div><div class="price">£18</div></div><div class="notes"><span>Orange blossom</span><span>Apricot</span><span>Honey</span></div><button class="cart-button" type="button" data-product="Feryen Estate Geisha">Add to cart</button></article>
 <article class="card"><div class="card-image"><span class="number">03</span><img src="https://calicocoffee.co.uk/cdn/shop/files/B80F87F0-4FFD-4EB4-95F1-BB9B358FBA28.jpg?v=1789605153&width=832" alt="Panama Sophia natural coffee"></div><div class="card-meta"><div><h3>Sophia FS15525</h3><div class="origin">Panama · Natural</div></div><div class="price">£31</div></div><div class="notes"><span>Red grape</span><span>Rose</span><span>Cacao</span></div><button class="cart-button" type="button" data-product="Sophia FS15525">Add to cart</button></article>
-<article class="card"><div class="card-image"><span class="number">04</span><img src="https://calicocoffee.co.uk/cdn/shop/files/IMG-2584.jpg?v=1789605280&width=832" alt="Kenya Kamavindi Geisha coffee"></div><div class="card-meta"><div><h3>Kamavindi Geisha</h3><div class="origin">Kenya · Washed</div></div><div class="price">£29</div></div><div class="notes"><span>Bergamot</span><span>White peach</span><span>Jasmine</span></div><button class="cart-button" type="button" data-product="Kamavindi Geisha">Add to cart</button></article>
 <article class="video-slot" aria-label="Coffee film placeholder"><div class="video-stage"><span class="play-symbol" aria-hidden="true">▶</span><span>COFFEE IN MOTION</span><small>Video placeholder</small></div><div class="video-caption"><span>A closer look at Calico.</span><small>Film slot · demo</small></div></article>
+<article class="card"><div class="card-image"><span class="number">04</span><img src="https://calicocoffee.co.uk/cdn/shop/files/IMG-2584.jpg?v=1789605280&width=832" alt="Kenya Kamavindi Geisha coffee"></div><div class="card-meta"><div><h3>Kamavindi Geisha</h3><div class="origin">Kenya · Washed</div></div><div class="price">£29</div></div><div class="notes"><span>Bergamot</span><span>White peach</span><span>Jasmine</span></div><button class="cart-button" type="button" data-product="Kamavindi Geisha">Add to cart</button></article>
 <article class="card"><div class="card-image"><span class="number">05</span><img src="https://calicocoffee.co.uk/cdn/shop/files/calico-finca-feryen-geisha-washed-2026-60g.jpg?v=1793726999&width=1200" alt="Panama Feryen Estate Geisha coffee"></div><div class="card-meta"><div><h3>Feryen Estate Geisha</h3><div class="origin">Panama · Washed</div></div><div class="price">£18</div></div><div class="notes"><span>Orange blossom</span><span>Apricot</span><span>Honey</span></div><button class="cart-button" type="button" data-product="Feryen Estate Geisha">Add to cart</button></article>
 <article class="card"><div class="card-image"><span class="number">06</span><img src="https://calicocoffee.co.uk/cdn/shop/files/B80F87F0-4FFD-4EB4-95F1-BB9B358FBA28.jpg?v=1789605153&width=832" alt="Panama Sophia natural coffee"></div><div class="card-meta"><div><h3>Sophia FS15525</h3><div class="origin">Panama · Natural</div></div><div class="price">£31</div></div><div class="notes"><span>Red grape</span><span>Rose</span><span>Cacao</span></div><button class="cart-button" type="button" data-product="Sophia FS15525">Add to cart</button></article>
 <article class="card"><div class="card-image"><span class="number">07</span><img src="https://calicocoffee.co.uk/cdn/shop/files/IMG-2584.jpg?v=1789605280&width=832" alt="Kenya Kamavindi Geisha coffee"></div><div class="card-meta"><div><h3>Kamavindi Geisha</h3><div class="origin">Kenya · Washed</div></div><div class="price">£29</div></div><div class="notes"><span>Bergamot</span><span>White peach</span><span>Jasmine</span></div><button class="cart-button" type="button" data-product="Kamavindi Geisha">Add to cart</button></article>
