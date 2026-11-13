@@ -134,6 +134,12 @@ font-family:Arial,Helvetica,sans-serif;font-weight:400;font-style:normal;letter-
 
 /* Match approach edges to section 01's 5px brick-red divider. */
 .process{border-top:5px solid #aa6b5a;border-bottom:5px solid #aa6b5a}
+
+/* Keep the photo filter independent of the structural divider. */
+.process-image{filter:none;border-right:0;background:none;isolation:isolate}
+.process-image:before{content:"";position:absolute;inset:0;background:url('https://calicocoffee.co.uk/cdn/shop/files/56cf5bf4-820f-437c-a5c4-bf6012e05a4b.jpg?v=1787262942&width=2560') center/cover;filter:grayscale(.25) saturate(.55);z-index:-1}
+.process-image:after{content:"";position:absolute;top:0;right:0;bottom:0;width:4px;background:rgba(152,75,56,.82);pointer-events:none}
+@media(max-width:850px){.process-image{border-bottom:0}.process-image:after{top:auto;left:0;bottom:0;width:auto;height:4px}}
 </style>
 </head>
 <body>
