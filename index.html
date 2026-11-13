@@ -68,6 +68,21 @@ font-family:Arial,Helvetica,sans-serif;font-weight:400;font-style:normal;letter-
 @media(max-width:850px){.hero-art{position:relative;height:240px;min-height:240px;max-height:240px}.hero-copy{padding:32px 4vw}}
 @media(max-width:600px){.coffee-grid{grid-template-columns:1fr;gap:20px}.card-image{aspect-ratio:1.15/1}.card h3{font-size:17px}.card-meta{min-height:0}.notes{font-size:9px}}
 
+
+/* Rectangular hero photo and photographic brick-red structure. */
+@media(min-width:851px){
+.hero{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+.hero-copy{min-height:480px;padding-top:40px;padding-bottom:36px}
+.hero-art{height:100%;max-height:none;min-height:480px}
+}
+.card{border:0;padding:0;background:transparent}
+.card-image{border:0;isolation:isolate}
+.card-image:after{content:"";position:absolute;inset:14px;z-index:2;pointer-events:none;background:linear-gradient(90deg,transparent calc(88% - 1px),rgba(152,75,56,.82) calc(88% - 1px),rgba(152,75,56,.82) calc(88% + 1px),transparent calc(88% + 1px)),linear-gradient(0deg,transparent calc(12% - 1px),rgba(152,75,56,.82) calc(12% - 1px),rgba(152,75,56,.82) calc(12% + 1px),transparent calc(12% + 1px))}
+.card-meta{padding-top:16px}
+.number{z-index:3}
+@media(max-width:850px){.hero-art{height:330px;min-height:330px;max-height:330px}}
+@media(max-width:500px){.hero-art{height:290px;min-height:290px;max-height:290px}}
+
 </style>
 </head>
 <body>
